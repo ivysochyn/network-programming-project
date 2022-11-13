@@ -4,4 +4,9 @@ Typing battles - is an opensource online service to improve your typing memory i
 ## How to build
 `TODO`
 ## How to run
-`TODO`
+You can run the python server using following command:
+```
+cd pyserver
+python main.py
+```
+As server is running, you can obtain connection to it by openning the `htpp://127.0.0.1:5000` address.
