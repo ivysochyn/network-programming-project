@@ -29,8 +29,14 @@ python main.py <ip-to-serve> <port> <cpp-server-ip> <cpp-server-port>
 
 As python server is running, you can obtain connection to it by openning the `htpp://<ip-to-serve>:<port>` in your browser.
 
-## Dependencies
-TODO
-
 ## Docker image
-TODO
+
+The docker image can be built using following command:
+```
+# docker build -t flask-server .
+```
+
+And runned using:
+```
+# docker run --network host --rm -v $PWD:/data -u $(id -u):$(id -u) -it flask-server``
+```
